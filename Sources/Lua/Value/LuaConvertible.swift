@@ -13,7 +13,7 @@ public protocol UserDataConvertible: Value {
 }
 
 /// Implemented by types that should be brought into Lua
-public protocol LuaConvertible: UserDataConvertible, Value {
+public protocol LuaConvertible: UserDataConvertible {
 	/// - Returns: The name of the type that will be used in Lua
 	static var typeName: StaticString { get }
 	
